@@ -1,0 +1,165 @@
+/* src/HomePage.css */
+
+.home-page {
+    background: rgba(186, 230, 253, 0.5) url('C:\Users\iuav1\Desktop\kulturelweb\kulturelgezi\public\background.jpg') no-repeat center center; /* Saydam arka plan rengi ve resim */
+    background-size: cover; /* Resmi ekran boyutuna göre ayarla */
+    height: 100vh; /* Sayfanın tamamını kaplayacak şekilde ayarla */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white; /* Yazıyı görünür yapmak için */
+    min-height: 100vh;
+}
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  padding: 1rem 5%; /* Yatay padding'i artırdık */
+  display: flex;
+  justify-content: flex-start; /* space-between yerine flex-start */
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 1000;
+  gap: 2rem; /* Öğeler arası boşluk */
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  margin-right: auto; /* Logoyu sola yapıştırır */
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 1.5rem; /* Menü öğeleri arası boşluk */
+  margin-right: auto; /* Menüyü de sola çeker */
+}
+
+/* Ana içerik için padding */
+.home-page {
+  padding-top: 70px;
+  padding-left: 5%; /* İçeriği de sola hizalıyoruz */
+  padding-right: 5%;
+}
+  
+  .logo {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 0.75rem;
+    border-radius: 50%;
+  }
+  .site-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #1e40af;
+    text-align: center; /* Yatayda ortalar */
+    margin: 1.5rem auto; /* Üst-alt boşluk + yatay otomatik margin */
+    display: block; /* Blok element yaparak genişliği kontrol eder */
+    max-width: 80%; /* İsteğe bağlı: Metnin genişliğini sınırlar */
+  }
+  
+  .navbar-menu {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .nav-link {
+    color: #1d4ed8;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #1e3a8a;
+  }
+  
+  .main-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+  }
+  
+  .feature-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+  }
+  
+  .feature-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 1.5rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+  }
+  
+  .feature-icon {
+    width: 3rem;
+    height: 3rem;
+    color: #2563eb;
+    margin-bottom: 1rem;
+  }
+  
+  .feature-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    color: #1e40af;
+  }
+  
+  .feature-description {
+    color: #6b7280;
+  }
+  
+  .discovery-section {
+    margin-top: 3rem;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 2rem;
+  }
+  
+  .discovery-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1e40af;
+    margin-bottom: 1.5rem;
+  }
+  
+  .discovery-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
+  }
+  
+  .discovery-item {
+    background-color: #dbeafe;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    text-align: center;
+    transition: background-color 0.3s ease;
+  }
+  
+  .discovery-item:hover {
+    background-color: #bfdbfe;
+  }
+  
+  .site-footer {
+    color:  rgb(248, 248, 248);
+    text-align: center;
+    padding: 1.5rem;
+    position: fixed; /* Sayfaya sabitler */
+    bottom: 0;       /* En alta yapıştırır */
+    left: 0;         /* Sola dayalı */
+    right: 0;        /* Sağa dayalı (tam genişlik) */
+    width: 100%;     /* Genişliği tam ekran */
+    z-index: 100;    /* Diğer içeriklerin üstünde görünmesi için */
+  }
